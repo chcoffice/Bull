@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSPCommon", "src\GSPCommon\GSPCommon.vcproj", "{37E4E960-9974-43F3-A8EA-9B9863E8FC84}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSPServer", "src\GSPServer\GSPServer.vcproj", "{8F753F5B-AD3B-4211-9EB2-406EACC51BBD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84} = {37E4E960-9974-43F3-A8EA-9B9863E8FC84}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GSPClient", "src\GSPClient\GSPClient.vcproj", "{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84} = {37E4E960-9974-43F3-A8EA-9B9863E8FC84}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "src\test\test.vcproj", "{B9274E36-15F9-4836-B9DF-30B271825D46}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4} = {3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD} = {8F753F5B-AD3B-4211-9EB2-406EACC51BBD}
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84} = {37E4E960-9974-43F3-A8EA-9B9863E8FC84}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestwxWidget", "src\TestwxWidget\TestwxWidget.vcproj", "{95B8754E-B468-49F6-BA1D-F2820269B0E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4} = {3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD} = {8F753F5B-AD3B-4211-9EB2-406EACC51BBD}
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84} = {37E4E960-9974-43F3-A8EA-9B9863E8FC84}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84}.Debug|Win32.Build.0 = Debug|Win32
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84}.Release|Win32.ActiveCfg = Release|Win32
+		{37E4E960-9974-43F3-A8EA-9B9863E8FC84}.Release|Win32.Build.0 = Release|Win32
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD}.Debug|Win32.Build.0 = Debug|Win32
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD}.Release|Win32.ActiveCfg = Release|Win32
+		{8F753F5B-AD3B-4211-9EB2-406EACC51BBD}.Release|Win32.Build.0 = Release|Win32
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}.Debug|Win32.Build.0 = Debug|Win32
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}.Release|Win32.ActiveCfg = Release|Win32
+		{3CD87A54-E3D1-4C84-AF44-5080C07F6EA4}.Release|Win32.Build.0 = Release|Win32
+		{B9274E36-15F9-4836-B9DF-30B271825D46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B9274E36-15F9-4836-B9DF-30B271825D46}.Debug|Win32.Build.0 = Debug|Win32
+		{B9274E36-15F9-4836-B9DF-30B271825D46}.Release|Win32.ActiveCfg = Release|Win32
+		{B9274E36-15F9-4836-B9DF-30B271825D46}.Release|Win32.Build.0 = Release|Win32
+		{95B8754E-B468-49F6-BA1D-F2820269B0E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95B8754E-B468-49F6-BA1D-F2820269B0E4}.Debug|Win32.Build.0 = Debug|Win32
+		{95B8754E-B468-49F6-BA1D-F2820269B0E4}.Release|Win32.ActiveCfg = Release|Win32
+		{95B8754E-B468-49F6-BA1D-F2820269B0E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

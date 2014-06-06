@@ -1,0 +1,35 @@
+CROSS_COMPILER =
+
+CC = $(CROSS_COMPILER)g++
+LD = $(CROSS_COMPILER)g++ -shared -lc
+C =  $(CROSS_COMPILER)gcc
+STRIP = $(CROSS_COMPILER)strip
+AR =  $(CROSS_COMPILER)ar
+
+CFLAGS = -O2 -Wall -D_GNU_SOURCE -D_LINUX_ -DLINUX -D_LINUX
+LDFLAGS =
+INC =
+LIBS =
+EXT_NAME = 
+
+ifeq ($(GSDEBUG),yes)
+CFLAGS += -g
+CFLAGS += -DDEBUG
+EXT_NAME = D
+else
+CFLAGS += -g
+CFLAGS += -DDEBUG
+endif
+
+CFLAGS += -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_ISOC9X_SOURCE
+
+#中间目录路径
+BIN_DIR = ../../obj/
+#安装路径
+INSTALL_PATH = ../../bin/ ../../../lib/GSP/ ../../test/
+
+
+
+INSTALL_HEADER_PATH = ../../../interface/GSP/
+
+INC = -I./ -I../../../include -I../../../interface/CommonLibs -I../../../interface/NetService
